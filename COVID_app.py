@@ -424,25 +424,14 @@ def get_data():
 confirmed, deaths = get_data()
 
 st.sidebar.markdown('# Joblackpoc Study COVID-19 Data and Reporting')
-st.sidebar.markdown('## **EpiCenter for Disease Dynamics**') 
-st.sidebar.markdown("## Key COVID-19 Metrics")
 st.sidebar.markdown("COVID-Local provides basic key See more at https://www.covidlocal.org/metrics/")
 st.markdown('## Select counties of interest')
 CA_counties = confirmed[confirmed.Province_State == 'California'].Admin2.unique().tolist()
 
 COUNTIES_SELECTED = st.multiselect('Select counties', CA_counties, default=['Yolo'])
 
-st.sidebar.markdown(" data are widely available is the estimate of **daily new cases per 100,000 population**.")
-
-st.sidebar.markdown("(A) Estimates of daily new cases per 100,000 population (averaged over the last seven days)")
-st.sidebar.markdown("(B) Daily incidence (new cases)")
-st.sidebar.markdown("(C) Cumulative cases and deaths")
-st.sidebar.markdown("(D) Daily new tests*")
-
-
 st.sidebar.markdown("COVID-19 Data Repository.  https://github.com/CSSEGISandData/COVID-19")
 st.sidebar.markdown("contacts traceed from https://covidactnow.org/")
-st.sidebar.markdown("*Rolling averages and proportions are not calculated if reporting is inconsistent over a period of 14 days.")
 st.sidebar.text('updated on '+ str(today))
 
 
