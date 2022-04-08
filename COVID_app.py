@@ -423,8 +423,8 @@ def get_data():
 
 confirmed, deaths = get_data()
 
-st.sidebar.markdown('# Joblackpoc Study COVID-19 Data and Reporting')
-st.sidebar.markdown("COVID-Local provides basic key See more at https://www.covidlocal.org/metrics/")
+st.sidebar.markdown('# Joblackpoc Chumphon COVID-19 Data and Reporting')
+st.sidebar.markdown("COVID-Local See more at https://www.covidlocal.org/metrics/")
 st.markdown('## Select counties of interest')
 CA_counties = confirmed[confirmed.Province_State == 'California'].Admin2.unique().tolist()
 
