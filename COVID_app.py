@@ -440,17 +440,7 @@ st.markdown(COUNTIES_SELECTED)
 plot_county(COUNTIES_SELECTED)
 
 
-st.markdown("## Tri-county area (Yolo, Sacramento, Solano)")
-plot_county(['Yolo', 'Solano', 'Sacramento'])
-
-st.markdown("## Yolo")
-plot_county(['Yolo'])
-
-st.markdown("## Sacramento")
-plot_county(['Sacramento'])
-
-st.markdown("## Solano")
-plot_county(['Solano'])
+#
 
 st.markdown("## State of California")
 plot_state()
